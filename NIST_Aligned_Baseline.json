@@ -1,0 +1,152 @@
+{
+  "PartitionKey": "StandardsTemplateV2",
+  "RowKey": "NIST-CSF-Custom-Baseline",
+  "templateName": "CIPP Hardened Baseline - NIST CSF",
+  "description": "<h2>NIST CSF Compliant Hardened Baseline</h2><p>Combines CIPP Low/Medium/High Impact templates + ATP, DLP, Sensitivity Labels from PowerShell script</p>",
+  "runManually": true,
+  "excludedTenants": [],
+  "tenantFilter": [
+    {
+      "label": "Template Tenant",
+      "value": "Template Tenant"
+    }
+  ],
+  "standards": {
+    "AuditLog": { "action": [{ "label": "Remediate", "value": "Remediate" }] },
+    "PhishProtection": { "action": [{ "label": "Remediate", "value": "Remediate" }] },
+    "EnableCustomerLockbox": { "action": [{ "label": "Remediate", "value": "Remediate" }] },
+    "AnonReportDisable": { "action": [{ "label": "Remediate", "value": "Remediate" }] },
+    "DisableGuestDirectory": { "action": [{ "label": "Remediate", "value": "Remediate" }] },
+    "laps": { "action": [{ "label": "Remediate", "value": "Remediate" }] },
+    "PWdisplayAppInformationRequiredState": { "action": [{ "label": "Remediate", "value": "Remediate" }] },
+    "allowOTPTokens": { "action": [{ "label": "Remediate", "value": "Remediate" }] },
+    "EnableFIDO2": { "action": [{ "label": "Remediate", "value": "Remediate" }] },
+    "EnableHardwareOAuth": { "action": [{ "label": "Remediate", "value": "Remediate" }] },
+    "TAP": {
+      "action": [{ "label": "Remediate", "value": "Remediate" }],
+      "standards": { "TAP": { "config": "true" } }
+    },
+    "PasswordExpireDisabled": { "action": [{ "label": "Remediate", "value": "Remediate" }] },
+    "ExternalMFATrusted": {
+      "action": [{ "label": "Remediate", "value": "Remediate" }],
+      "standards": { "ExternalMFATrusted": { "state": "true" } }
+    },
+    "DisableTenantCreation": { "action": [{ "label": "Remediate", "value": "Remediate" }] },
+    "DisableM365GroupUsers": { "action": [{ "label": "Remediate", "value": "Remediate" }] },
+    "DisableAppCreation": { "action": [{ "label": "Remediate", "value": "Remediate" }] },
+    "GlobalQuarantineNotifications": {
+      "action": [{ "label": "Remediate", "value": "Remediate" }],
+      "standards": { "GlobalQuarantineNotifications": { "NotificationInterval": "1.00:00:00" } }
+    },
+    "DisableTNEF": { "action": [{ "label": "Remediate", "value": "Remediate" }] },
+    "CloudMessageRecall": {
+      "action": [{ "label": "Remediate", "value": "Remediate" }],
+      "standards": { "CloudMessageRecall": { "state": "true" } }
+    },
+    "AutoExpandArchive": { "action": [{ "label": "Remediate", "value": "Remediate" }] },
+    "RotateDKIM": { "action": [{ "label": "Remediate", "value": "Remediate" }] },
+    "AddDKIM": { "action": [{ "label": "Remediate", "value": "Remediate" }] },
+    "EnableMailboxAuditing": { "action": [{ "label": "Remediate", "value": "Remediate" }] },
+    "SendReceiveLimitTenant": {
+      "action": [{ "label": "Remediate", "value": "Remediate" }],
+      "standards": { "SendReceiveLimitTenant": { "SendLimit": "150", "ReceiveLimit": "150" } }
+    },
+    "SendFromAlias": { "action": [{ "label": "Remediate", "value": "Remediate" }] },
+    "SPDisallowInfectedFiles": { "action": [{ "label": "Remediate", "value": "Remediate" }] },
+
+    "DisableBasicAuthSMTP": { "action": [{ "label": "Remediate", "value": "Remediate" }] },
+    "ActivityBasedTimeout": {
+      "action": [{ "label": "Remediate", "value": "Remediate" }],
+      "standards": { "ActivityBasedTimeout": { "timeout": "1.00:00:00" } }
+    },
+    "DisableSecurityGroupUsers": { "action": [{ "label": "Remediate", "value": "Remediate" }] },
+    "DisableGuests": { "action": [{ "label": "Remediate", "value": "Remediate" }] },
+    "OauthConsent": {
+      "action": [{ "label": "Remediate", "value": "Remediate" }],
+      "standards": { "OauthConsent": { "AllowedApps": "" } }
+    },
+    "GuestInvite": {
+      "action": [{ "label": "Remediate", "value": "Remediate" }],
+      "standards": { "GuestInvite": { "allowInvitesFrom": { "label": "Admins, Guest inviters and All Members", "value": "adminsGuestInvitersAndAllMembers" } } }
+    },
+    "DisableOutlookAddins": { "action": [{ "label": "Remediate", "value": "Remediate" }] },
+    "SafeSendersDisable": { "action": [{ "label": "Remediate", "value": "Remediate" }] },
+    "DelegateSentItems": {
+      "action": [{ "label": "Remediate", "value": "Remediate" }],
+      "standards": { "DelegateSentItems": { "IncludeUserMailboxes": true } }
+    },
+    "DisableSharedMailbox": { "action": [{ "label": "Remediate", "value": "Remediate" }] },
+    "intuneDeviceReg": {
+      "action": [{ "label": "Remediate", "value": "Remediate" }],
+      "standards": { "intuneDeviceReg": { "max": "20" } }
+    },
+    "intuneRequireMFA": { "action": [{ "label": "Remediate", "value": "Remediate" }] },
+    "SPDirectSharing": { "action": [{ "label": "Remediate", "value": "Remediate" }] },
+    "SPExternalUserExpiration": {
+      "action": [{ "label": "Remediate", "value": "Remediate" }],
+      "standards": { "SPExternalUserExpiration": { "Days": "90" } }
+    },
+    "SPEmailAttestation": {
+      "action": [{ "label": "Remediate", "value": "Remediate" }],
+      "standards": { "SPEmailAttestation": { "Days": "7" } }
+    },
+    "DisableSharePointLegacyAuth": { "action": [{ "label": "Remediate", "value": "Remediate" }] },
+
+    "ConditionalAccessTemplate": [
+      {
+        "action": [{ "label": "Remediate", "value": "Remediate" }],
+        "TemplateList": {
+          "label": "CIPP: Enforce Multi factor authentication for each application",
+          "value": "49a8069e-3b46-4680-a035-9250bc675446.CATemplate.json",
+          "addedFields": {}
+        },
+        "state": "Enabled"
+      }
+    ],
+    "StaleEntraDevices": {
+      "action": [{ "label": "Remediate", "value": "Remediate" }],
+      "standards": { "StaleEntraDevices": { "deviceAgeThreshold": "120" } }
+    },
+    "DisableSMS": { "action": [{ "label": "Remediate", "value": "Remediate" }] },
+    "DisableVoice": { "action": [{ "label": "Remediate", "value": "Remediate" }] },
+    "DisableEmail": { "action": [{ "label": "Remediate", "value": "Remediate" }] },
+    "EXODisableAutoForwarding": { "action": [{ "label": "Remediate", "value": "Remediate" }] },
+    "AntiPhishPolicy": {
+      "action": [{ "label": "Remediate", "value": "Remediate" }],
+      "standards": {
+        "AntiPhishPolicy": {
+          "PhishThresholdLevel": "2",
+          "EnableFirstContactSafetyTips": true,
+          "EnableSimilarUsersSafetyTips": true,
+          "EnableSimilarDomainsSafetyTips": true,
+          "EnableUnusualCharactersSafetyTips": true,
+          "AuthenticationFailAction": "Quarantine",
+          "SpoofQuarantineTag": "DefaultFullAccessWithNotificationPolicy",
+          "TargetedUserProtectionAction": "MoveToJmf",
+          "TargetedUserQuarantineTag": "DefaultFullAccessWithNotificationPolicy",
+          "TargetedDomainProtectionAction": "MoveToJmf",
+          "TargetedDomainQuarantineTag": "DefaultFullAccessWithNotificationPolicy",
+          "MailboxIntelligenceProtectionAction": "MoveToJmf",
+          "MailboxIntelligenceQuarantineTag": "DefaultFullAccessWithNotificationPolicy"
+        }
+      }
+    },
+    "sharingCapability": {
+      "action": [{ "label": "Remediate", "value": "Remediate" }],
+      "standards": { "sharingCapability": { "Level": "externalUserSharingOnly" } }
+    },
+    "RetentionPolicyTag": {
+      "action": [{ "label": "Remediate", "value": "Remediate" }],
+      "standards": { "RetentionPolicyTag": { "AgeLimitForRetention": "90" } }
+    },
+    "DisableReshare": { "action": [{ "label": "Remediate", "value": "Remediate" }] },
+    "DisableUserSiteCreate": { "action": [{ "label": "Remediate", "value": "Remediate" }] },
+
+    "customPolicyPlaceholder": {
+      "DLPPolicies": "Configured externally using PowerShell — Exchange, SharePoint, Teams DLP rules based on sensitivity detection",
+      "SensitivityLabels": "Applied via Graph PowerShell — Confidential/Internal/Highly Confidential scheme with default assignment",
+      "ATPConfig": "Advanced Threat Protection settings (Safe Links, Safe Attachments, Malware filtering) configured outside CIPP",
+      "TenantAllowBlockList": "Manually maintained or scripted — not currently supported via CIPP"
+    }
+  }
+}
